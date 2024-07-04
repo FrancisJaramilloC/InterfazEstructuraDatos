@@ -43,15 +43,15 @@ public class NodoArbol extends Nodo{
         }
     }
     
-    public NodoArbol delete(NodoArbol root, int valor){
+    public NodoArbol eliminarNodo(NodoArbol root, int valor){
         if (root == null) {
             return root;
         }
 
         if (valor < root.getValor()) {
-            root.setNodoIzquierdo(delete(root.getNodoIzquierdo(), valor));
+            root.setNodoIzquierdo(eliminarNodo(root.getNodoIzquierdo(), valor));
         } else if (valor > root.getValor()) {
-            root.setNodoDerecho(delete(root.getNodoDerecho(), valor));
+            root.setNodoDerecho(eliminarNodo(root.getNodoDerecho(), valor));
         } else {
             return null; 
         }

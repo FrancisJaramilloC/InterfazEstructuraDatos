@@ -52,7 +52,7 @@ public class ArbolBinario extends EstructuraDeDato {
             return;
         }
 
-        nodoRaiz = nodoRaiz.delete(nodoRaiz, posicion);
+        nodoRaiz = nodoRaiz.eliminarNodo(nodoRaiz, posicion);
         recorrerInOrden();
     }
 
