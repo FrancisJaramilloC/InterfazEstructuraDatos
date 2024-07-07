@@ -12,4 +12,5 @@ El presente diagrama de clases corresponde un programa que soporta las estructur
 
 **Recomendaciones para el correcto funcionamiento de la aplicación de escritorio basada en Java**
 Tener instalada la versión más reciente de Java (22.0.1); para confirmarlo, se puede abrir la terminal (CMD) y escribir el siguiente comando:
-java --version
+    
+    java --version
