@@ -43,9 +43,9 @@ public class NodoArbol extends Nodo{
         }
     }
     
-    public NodoArbol eliminarNodo(NodoArbol root, int valor){
+    public NodoArbol eliminarNodo(NodoArbol root, int valor) {
         if (root == null) {
-            return root;
+            return null;
         }
 
         if (valor < root.getValor()) {
@@ -53,10 +53,30 @@ public class NodoArbol extends Nodo{
         } else if (valor > root.getValor()) {
             root.setNodoDerecho(eliminarNodo(root.getNodoDerecho(), valor));
         } else {
-            return null; 
+            // Nodo encontrado
+            if (root.getNodoIzquierdo() == null) {
+                return root.getNodoDerecho();
+            } else if (root.getNodoDerecho() == null) {
+                return root.getNodoIzquierdo();
+            }
+
+            // Nodo con dos hijos: encontrar el nodo más grande del subárbol izquierdo
+            NodoArbol mayorNodo = obtenerMayor(root.getNodoIzquierdo());
+
+            // Copiar el valor del mayor nodo en el nodo raíz
+            root.setValor(mayorNodo.getValor());
+
+            // Eliminar el mayor nodo en el subárbol izquierdo
+            root.setNodoIzquierdo(eliminarNodo(root.getNodoIzquierdo(), mayorNodo.getValor()));
         }
         return root;
     }
 
-    
+    private NodoArbol obtenerMayor(NodoArbol root) {
+        NodoArbol actual = root;
+        while (actual.getNodoDerecho() != null) {
+            actual = actual.getNodoDerecho();
+        }
+        return actual;
+    }
 }

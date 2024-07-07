@@ -53,7 +53,6 @@ public class ArbolBinario extends EstructuraDeDato {
         }
 
         nodoRaiz = nodoRaiz.eliminarNodo(nodoRaiz, posicion);
-        recorrerInOrden();
     }
 
     //PreOrden: Raiz, Izquierdo, Derecho
