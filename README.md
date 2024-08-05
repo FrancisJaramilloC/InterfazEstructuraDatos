@@ -10,7 +10,9 @@
 
 
 
-El presente diagrama de clases corresponde un programa que soporta las estructuras de datos conocidas como Árboles Binarios, dentro de los cuales, se pueden crear, agregar y eliminar nodos; utilizando las clases abstractas necesarias, implementando los métodos respectivos para cada una de las clases existentes. Cuyo código fuente se presenta dentro de la rama develop, en la carpeta "ArbolBinario/ArbolBinario", dentro de ella se presenta la carpeta "src/javaapplication1" y su contenido son todas las clases, que son los archivos de extensión ".java", que se presentan en el diagrama de clases con su respectiva lógica.
+El presente diagrama de clases corresponde un programa que soporta las estructuras de datos conocidas como Árboles Binarios, dentro de los cuales, se pueden crear, agregar y eliminar nodos; utilizando las clases abstractas necesarias, implementando los métodos respectivos para cada una de las clases existentes. 
+
+Cuyo código fuente se presenta dentro de la rama develop, en la carpeta "ArbolBinario/ArbolBinario", dentro de ella se presenta la carpeta "src/javaapplication1" y su contenido son todas las clases, que son los archivos de extensión ".java", que se presentan en el diagrama de clases con su respectiva lógica.
 
 # Nota:
 El archivo "ejemplo.java" es el programa principal o que se conoce como "main".
